@@ -76,7 +76,7 @@ const graduates = [{ "id": 1, "first_name": "Cynde", "university": "Missouri Sou
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
-graduates.forEach(function (student) {
+graduates.forEach((student) => {
   universities.push(student.university)
 });
 universities.sort();
@@ -88,7 +88,7 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
-const contactInfo = graduates.map(function (student) {
+const contactInfo = graduates.map((student) => {
   return (student.first_name + " " + student.email)
 });;
 console.log(contactInfo);
@@ -121,7 +121,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
-zooAnimals.forEach(function (animal) {
+zooAnimals.forEach((animal) => {
   animalNames.push("Name: " + animal.animal_name + ", Scientific: " + animal.scientific_name)
 });
 
@@ -133,10 +133,11 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = zooAnimals.map(function (animal) {
+const lowerCase = zooAnimals.map((animal) => {
   return (animal.animal_name.toLowerCase())
 });;
 console.log(lowerCase);
+
 
 /* Request 3: .filter() 
 
