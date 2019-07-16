@@ -7,8 +7,8 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
-function consume(arr1, arr2, cb) {
-  return cb(arr1, arr2);
+function consume(arg1, arg2, cb) {
+  return cb(arg1, arg2);
 }
 
 /* Step 2: Create several functions to callback with consume();
